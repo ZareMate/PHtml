@@ -1,5 +1,132 @@
 <!DOCTYPE html>
-<head>
-</head>
-<body>
-</body>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <img src="" style="float: left;" />
+    <title>Jebać Pis</title>
+
+    <meta name="description" content="Jebać Pis" />
+    <meta name="keywords" content="pis, Pis" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <img src="" style="float: left;" />
+          <span style="color: #c34f4f">Jebać</span> pis
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+      <div class="nav">
+        <ol>
+          <li><a href="#">Strona główna</a></li>
+          <li>
+            <a href="#">.</a>
+            <ul>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">.</a>
+            <ul>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">.</a>
+            <ul>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">.</a>
+            <ul>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+              <li><a href="#">.</a></li>
+            </ul>
+          </li>
+          <li><a href="#">O autorach</a></li>
+        </ol>
+      </div>
+
+      <div class="content">
+        <p></p>
+
+        <p></p>
+
+        <p></p>
+
+        <p></p>
+
+        <p></p>
+      </div>
+
+      <div class="socials">
+        <div class="socialdivs">
+          <div class="fb">
+            <i class="icon-facebook"></i>
+          </div>
+          <div class="yt">
+            <i class="icon-youtube"></i>
+          </div>
+          <div class="tw">
+            <i class="icon-twitter"></i>
+          </div>
+          <div class="gplus">
+            <i class="icon-gplus"></i>
+          </div>
+          <div style="clear:both"></div>
+        </div>
+      </div>
+
+      <div class="footer">Jebać Pis 2021&copy;</div>
+    </div>
+
+    <script src="jquery-1.11.3.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        var NavY = $(".nav").offset().top;
+
+        var stickyNav = function() {
+          var ScrollY = $(window).scrollTop();
+
+          if (ScrollY > NavY) {
+            $(".nav").addClass("sticky");
+          } else {
+            $(".nav").removeClass("sticky");
+          }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+          stickyNav();
+        });
+      });
+    </script>
+  </body>
+</html>
