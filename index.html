@@ -4,54 +4,28 @@
     <meta charset="utf-8" />
     <title>Rodzaje systemów operacyjnych</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.me/b79dbdfc-b511-4e64-b306-9425899fc858%2Fsearch.png?1633892612965" />
   </head>
   <body>
     <div
       style=" text-align: center; background-color: #222222; padding: 30px; margin: 0px;"
     >
-      <h2><a href="index.html">Rodzaje systemów operacyjnych</a></h2>
     </div>
-    <div class="nav">
-			<div class="navdivs">
-				<div class="win10">
-					<a href="win.html"><img class="icons" src="Windows-10-Icon.png" width="100" height="100"/></a>
-				</div>
-				<div class="linux">
-					<a href="linux.html"><img class="icons" src="226772.png" width="100" height="100"/></a>
-				</div>
-				<div class="macos">
-					<a href="mac.html"><img class="icons" src="Finder_Icon_macOS_Big_Sur.png" width="100" height="100"/></a>
-				</div>
-				<div class="android">
-					<a href="android.html"><img class="icons" src="Android_icon-icons.com_66772.png" width="100" height="100"/></a>
-				</div>
-				<div style="clear:both"></div>
-			</div>
-		</div>
-    <div
-      style="text-align: justify;margin-left: 60px;margin-right: 60px;margin-top: 40px"
-    >
-      <b class="b"
-        >Systemy operacyjne
-        </b><br />
-      <p>
-        <b>System operacyjny</b> jest środowiskiem programów tworzących główną platformę programową umożliwiającą działanie zainstalowanego w systemie oprogramowania. OS nadzoruje pracę wszystkich uruchomionych procesów oraz urządzeń komputera. Pomimo iż swą pracę wykonuje przeważnie w tle i sam w sobie nie tworzy z komputera w pełni funkcjonalnego narzędzia jednak bez niego komputer jest kompletnie bezużyteczny. System operacyjny zainstalowany na dysku twardym komputera decyduje jakie oprogramowanie może zostać uruchomione pod jego kontrolą, wpływa na bezpieczeństwo danych, realizuje połączenia do sieci nadzorując podrzędne systemy pracujące na innych komputerach, określa kompatybilność wobec innych systemów, decydując o funkcjonalności stabilności pracy. Niestety nie istnieje system idealny, każdy ma swoje zalety i wady.
-      </p><p>
-      Główne zadania stawiane przed systemami operacyjnymi to:</br>
-      <div class=tab>zarządzanie zasobami komputera - systemy operacyjne staruję oraz optymalizują wykorzystanie określonych urządzeń, które wchodzą w skład zestawu komputerowego; specjalne moduły zwane sterownikami, które składają się na system operacyjny udostępniają aplikacjom spójne metody programowania urządzeń (interfejsy), co gwarantuje współdziałanie każdego nowego urządzania z oprogramowaniem (jeżeli producent dostarczy właściwy sterownik)
-      </div></p><p>
-      <div class=tab>gromadzenie oraz zarządzanie danymi - systemy operacyjne wyposażone są w modułu obsługujące system plików, czyli struktury umieszczone na dyskach, pomagające w logiczny sposób uporządkować dane, grupując je w katalogi i pliki
-      </div></p><p>
-      <div class=tab>maszyny wirtualne - systemy operacyjne udostępniają aplikacjom tzw. maszyny wirtualne, czyli uproszczone obrazy maszyn, na których pracują aplikacje; system udostępnia aplikacjom szczegóły dna temat komputera oraz rozszerzenia ułatwiające pracę (np. zasoby udostępniane poprzez sieć aplikacje widzą tak, jakby znajdowały się one na dysku lokalnym; aplikacja, która korzysta z takiego zasobu nie obsługuje pracy sieciowej, więc aby umożliwić jej dostęp do zasobu, system operacyjny symuluje, jest zasób ten jest lokalny udostępniając go dla aplikacji)
-      </div></p><p>
-      <div class=tab>wielozadaniowość - na pojedynczym komputerze funkcjonować może wiele aplikacji w jednym czasie; każda aplikacja otrzymuje swoją maszynę wirtualną i może pracować jakby była pojedynczym programem działającym na maszynie; dzięki takiej właściwości systemów operacyjnych nie ma potrzeby przystosowywania aplikacji, by mogła dzielić się daną maszyną z innymi aplikacjami
-      </div></p><p>
-      <div class=tab>interakcja z użytkownikiem - rolę tę spełnia najbardziej zewnętrzna warstwa systemu operacyjnego zwana powłoką (ang. shell), która pozwala użytkownikowi uruchamiać aplikacje; w systemach graficznych do powłoki zaliczają się także typowe elementy interfejsu, z których korzysta aplikacja, jak kontrolki czy okna dialogowe
-      </div></div></p>
+    <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a site"
+                />
+            </div>
+            <div class="nigger"><ul id="sites"></ul></div>
+        </div>
     <div
       style=" text-align: right; background-color: #222222; padding: 30px; margin: 0px;"
     >
       Mateusz Zaremba
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
